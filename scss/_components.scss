@@ -1,0 +1,150 @@
+//header
+.header{
+  
+ .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:12px 0;
+    background-color: $color-black;
+    }
+   
+     .brand{
+       display: flex;
+       align-items: center;
+     }
+     .banner{
+      text-align: center;
+      color: $color-white;
+      
+      &__img {
+        position: relative;
+      }
+      &__txt {
+         @include centering(60%);
+         left:17%;
+         z-index: 999;
+         margin-top: 3rem;
+         animation: fadeIn 5s;
+       }
+       img {
+         width:100%;
+       }
+     }
+}
+
+//about
+.about{
+   background-color: $color-white;
+   padding: 2rem 0;
+   &-wrapper {
+ @include dflexLayout;
+      &__video-box {
+          background: url('../images/about.jpg');
+          width:40%;
+          height:400px;
+      }
+      &__content {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width:55%;
+         h3 {
+         font-weight: $font-regular;
+         font-size: 34px;
+         color: $color-gray;
+         }
+         p {
+         font-size: 15px;
+         color: $color-light-gray;
+         margin-bottom:1rem;
+         }
+         ul li+li {
+         margin-top: 15px;
+         }
+         ul li {
+            padding-left: 26px;
+         }
+         
+         &-para {
+           margin-top:1rem;
+         }
+      }
+   }
+}
+
+// menu 
+.menu{
+   padding:1rem 0;
+   &-title {
+     text-align: center;
+   }
+   &-wrapper{
+       @extend .menu-title;
+       @include flexLayout;
+       margin:2rem 0;
+
+      &__active {
+        background-color: $color-primary;
+        color:$color-white;
+      }
+      &__btn {
+         border-radius: 30px;
+         margin-right:1rem;
+      }
+   }
+   &-content {
+      @include dflexLayout;
+      text-align: left;
+      a {
+         color:$color-primary;
+      }
+   }
+   &-item {
+      text-align: left;
+      width:40%;
+      padding:0 2rem;
+   }
+   &-spacer {
+      text-align: left;
+      padding-top: 1rem;
+   }
+}
+
+// book a table 
+.book-a-table {
+   padding:2rem 0;
+   &-title {
+      text-align: center;
+   }
+   &__form {
+      // box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+      padding: 2rem 8rem;
+      background: $color-white-form;
+  }
+  &-btn {
+   
+   @extend .menu-wrapper__btn;
+  text-align: center;
+   padding-top: 1rem;
+   height: 30px;
+   text-decoration: none;
+  }
+}
+
+// footer 
+footer {
+    background: $color-dark;
+    color: $color-white;
+    font-size: 14px;
+    text-align: center;
+    padding: 35px 0;
+    
+    &__social-links {
+       margin:1rem 0;
+    }
+    a {
+       color: $color-primary;
+    }
+
+}

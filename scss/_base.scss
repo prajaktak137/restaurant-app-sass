@@ -1,0 +1,48 @@
+$color-dark:#262626;
+$color-black:#000000;
+$color-light-gray:#848484;
+$color-gray:#5f5950;
+$color-white-form:#F9F6EE;
+$color-primary:orange;
+$color-white: #fff;
+$color-royal-blue: #021945;
+$color-green:#45a049;
+
+//font family
+$font1:'Dancing Script',cursive;
+$font2:'Josefin Sans',sans-serif;
+$font-primary:"Poppins", sans-serif;
+
+//font weight
+$font-light:300;
+$font-regular:400;
+$font-bold:700;
+
+
+@mixin textStyles{
+  font-weight: $font-light;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@mixin flexLayout{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+@mixin dflexLayout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin centering($topValue){
+    position:absolute;
+    top:$topValue;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:$color-white;
+}
+
+.fst-italic {
+  font-style: italic;
+}
+
