@@ -2,6 +2,14 @@
   font-style: italic;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
 .logo {
   font-size: 70px;
   color: orange;
@@ -19,7 +27,7 @@
 }
 
 .main-name {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Satisfy", sans-serif;
   font-size: 40px;
   color: #fff;
   font-weight: 300;
@@ -130,6 +138,24 @@
           animation: fadeIn 5s;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .header .banner img {
   width: 100%;
 }
@@ -195,14 +221,6 @@
   margin-top: 1rem;
 }
 
-.menu {
-  padding: 1rem 0;
-}
-
-.menu-title, .menu-wrapper {
-  text-align: center;
-}
-
 .menu-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,6 +270,47 @@
   padding-top: 1rem;
 }
 
+.gallery {
+  padding: 2rem 0;
+}
+
+.gallery__title p, .contact__title p {
+  width: 50%;
+  margin: 0 auto 2rem auto;
+  font-weight: 300;
+}
+
+.gallery__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0.5rem 1rem;
+}
+
+.gallery-item {
+  width: 24%;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.gallery-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.gallery-item img {
+  width: 550px;
+  height: 320px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
 .book-a-table {
   padding: 2rem 0;
 }
@@ -278,6 +337,10 @@ footer {
   font-size: 14px;
   text-align: center;
   padding: 35px 0;
+}
+
+footer-title {
+  color: orange;
 }
 
 footer__social-links {
@@ -346,9 +409,12 @@ h6 {
 h3 {
   font-size: 36px;
   font-weight: 700;
-  color: orange;
   padding: 0;
   margin: 0 0 15px 0;
+}
+
+h3 span {
+  color: orange;
 }
 
 ul {

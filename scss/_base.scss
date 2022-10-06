@@ -12,6 +12,7 @@ $color-green:#45a049;
 $font1:'Dancing Script',cursive;
 $font2:'Josefin Sans',sans-serif;
 $font-primary:"Poppins", sans-serif;
+$font-heading:"Satisfy", sans-serif;
 
 //font weight
 $font-light:300;
@@ -44,5 +45,11 @@ $font-bold:700;
 
 .fst-italic {
   font-style: italic;
+}
+.text-center {
+  text-align: center;
+}
+.my-2 {
+  margin: 2rem 0;
 }
 

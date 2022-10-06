@@ -26,6 +26,10 @@
          z-index: 999;
          margin-top: 3rem;
          animation: fadeIn 5s;
+         @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+          }
        }
        img {
          width:100%;
@@ -75,12 +79,7 @@
 
 // menu 
 .menu{
-   padding:1rem 0;
-   &-title {
-     text-align: center;
-   }
    &-wrapper{
-       @extend .menu-title;
        @include flexLayout;
        margin:2rem 0;
 
@@ -109,6 +108,43 @@
       text-align: left;
       padding-top: 1rem;
    }
+}
+
+// gallery
+.gallery {
+   padding:2rem 0;
+   &__title p {
+      width:50%;
+      margin: 0 auto 2rem auto;
+      font-weight: 300;
+   }
+   &__inner {
+      display: flex;
+      align-items: center;
+      padding:0 0 0.5rem 1rem;
+   }
+   &-item {
+      width:24%;
+      overflow: hidden;
+      border-right: 3px solid $color-white;
+      border-bottom: 3px solid $color-white;
+      flex: 0 0 auto;
+      &:not(:last-child){
+      margin-right:0.5rem;
+      }
+      img {
+        width:550px;
+        height:320px;
+        transition: all ease-in-out 0.4s;
+    }
+ }
+}
+
+//contact
+.contact {
+   &__title {
+     @extend .gallery__title;
+ }
 }
 
 // book a table 
@@ -140,6 +176,9 @@ footer {
     text-align: center;
     padding: 35px 0;
     
+    &-title {
+     color:$color-primary;
+    }
     &__social-links {
        margin:1rem 0;
     }

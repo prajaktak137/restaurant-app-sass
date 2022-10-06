@@ -8,7 +8,7 @@
     @include flexLayout
 }
 .main-name{
-  font-family: $font2;
+  font-family: $font-heading;
   font-size: 40px;
   color:$color-white;
   @include textStyles
