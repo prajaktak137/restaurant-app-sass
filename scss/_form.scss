@@ -11,8 +11,8 @@ input[type=text], input[type=number], select, textarea {
   }
   
   input[type=submit] {
-    background-color: $color-green;
-    color: $color-white;
+    background-color: map-get($colors, "btn-submit"); //map function used here
+    color: map-get($colors, "white");      //map
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -20,5 +20,5 @@ input[type=text], input[type=number], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: $color-green;
+    background-color: $color-primary;
   }

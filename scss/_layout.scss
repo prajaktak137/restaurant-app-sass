@@ -24,7 +24,7 @@
     font-family: $font1;
     font-size: 80px;
     font-weight:$font-light;
-    color:$color-primary;
+    color:transparentize($color: $color-primary, $amount: 0.5);  // used transparentize
     margin-bottom: 0.8rem;
 }
 .sub-heading{
@@ -62,9 +62,7 @@
         
     }
     &-yellow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+     @include dflexCenter;
     height: 40px;
     text-decoration: none;
     border-radius: 30px;

@@ -53,7 +53,7 @@
          width:55%;
          h3 {
          font-weight: $font-regular;
-         font-size: 34px;
+         font-size: fontSizeOp(17px);  //function used to double font size
          color: $color-gray;
          }
          p {
@@ -154,7 +154,7 @@
    &__form {
       // box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
       padding: 2rem 8rem;
-      background: $color-white-form;
+      background-color: mix($color-gray, $color-primary, 70%); //used mix
   }
 }
 
