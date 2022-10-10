@@ -18,6 +18,7 @@
 <body>
     <!-- begin::header  -->
     <header class="header">
+      <div class="container">
      <nav class="navbar">
        <div class="brand">
           <a href="#" class="logo"><i class='fas fa-hamburger'></i></a>
@@ -34,7 +35,8 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#book-a-table" class="book-a-table-btn btn">Book a table</a>
+      <a href="#book-a-table" class="btn-yellow btn">Book a table</a>
+     </div>
     </nav>
       <!-- begin::banner  -->
       <section id="home">
@@ -44,16 +46,11 @@
             <h3 class="sub-heading">To Food Mania</h3>
             <a href="#book-a-table"><button type="button" class="btn">Reservation</button></a>
         </div>
-        <!-- begin::slider  -->
-       <div class="w3-content w3-display-container banner__img">
-        <img class="mySlides" src="./images/slide/slide-1.jpg" alt="enjoy food">
-        <img class="mySlides" src="./images/slide/slide-2.jpg" alt="happy customer">
-        <img class="mySlides" src="./images/slide/slide-3.jpg" alt="group dinner">
-        
-       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        <!-- begin::banner image  -->
+       <div class="banner__img">
+        <img class="cust-img" src="./images/slide/slide-1.jpg" alt="customer">
       </div>
-      <!-- end::slider  -->
+      <!-- end:: banner image  -->
     </div>
   </section>
   <!-- end::banner  -->
@@ -65,11 +62,12 @@
     
 <!-- begin:: about  -->
     <section id="about" class="about">
+      <div class="container">
    
         <div class="about-wrapper">
           
           <div class="about-wrapper__video-box">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/HS24PywYlxg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+           
           </div>
 
           <div class="about-wrapper__content">
@@ -96,6 +94,7 @@
             </div>
 
           </div>
+      </div>
       </div>
  </section>
  <!-- end:: about  -->

@@ -56,7 +56,17 @@
     &-menu {
         transition: all ease-in-out .5s;
         &:hover {
-            color: $color-black;
+            color: $color-white;
+            background-color: $color-black;
         }
+        
+    }
+    &-yellow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 30px;
     }
 }

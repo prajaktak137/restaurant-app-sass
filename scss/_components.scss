@@ -1,10 +1,8 @@
 //header
 .header{
-  
+   background-color: $color-black;
  .navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include dflexLayout;
     padding:12px 0;
     background-color: $color-black;
     }
@@ -157,14 +155,6 @@
       // box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
       padding: 2rem 8rem;
       background: $color-white-form;
-  }
-  &-btn {
-   
-   @extend .menu-wrapper__btn;
-  text-align: center;
-   padding-top: 1rem;
-   height: 30px;
-   text-decoration: none;
   }
 }
 
