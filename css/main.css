@@ -1,15 +1,3 @@
-.fst-italic {
-  font-style: italic;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.my-2 {
-  margin: 2rem 0;
-}
-
 .logo {
   font-size: 70px;
   color: orange;
@@ -49,7 +37,7 @@
   font-family: "Dancing Script", cursive;
   font-size: 80px;
   font-weight: 300;
-  color: orange;
+  color: rgba(255, 165, 0, 0.5);
   margin-bottom: 0.8rem;
 }
 
@@ -97,12 +85,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 40px;
   text-decoration: none;
   border-radius: 30px;
@@ -341,7 +329,7 @@
 
 .book-a-table__form {
   padding: 2rem 8rem;
-  background: #F9F6EE;
+  background-color: #8f7038;
 }
 
 footer {
@@ -386,7 +374,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: orange;
 }
 
 * {
@@ -458,5 +446,17 @@ li a {
 li a:hover {
   background-color: orange;
   color: #fff;
+}
+
+.fst-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.my-2 {
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=main.css.map */
