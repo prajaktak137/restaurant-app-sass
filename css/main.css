@@ -217,6 +217,10 @@
   margin-bottom: 1rem;
 }
 
+.about-wrapper__content .fa-check-double {
+  color: orange;
+}
+
 .about-wrapper__content ul li + li {
   margin-top: 15px;
 }
